@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pick Which u Want</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div><img src="./tshirt1.png" id="large_image"></div>
+
+
+        <div id="small_image">
+            <img id="img1" src="./tshirt1.png" onclick="imgclicked(this)">
+            <img id="img2" src="./tshirt2.png" onclick="imgclicked(this)">
+            <img id="img3" src="./tshirt3.png" onclick="imgclicked(this)">
+            <img id="img4" src="./tshirt4.png" onclick="imgclicked(this)">
+        </div>
+    </div>
+
+    <script>
+        function imgclicked(upcome) {
+            var largeimage = document.getElementById("large_image");
+            largeimage.src = upcome.src;
+        }
+    </script>
+</body>
+
+</html>
